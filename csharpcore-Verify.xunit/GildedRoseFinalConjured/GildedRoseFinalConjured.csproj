@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>GildedRoseKata</RootNamespace>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\GildedRoseFinal\AgedBrieItem.cs" Link="AgedBrieItem.cs" />
+		<Compile Include="..\GildedRoseFinal\BackstageConcertPassItem.cs" Link="BackstageConcertPassItem.cs" />
+		<Compile Include="..\GildedRoseFinal\GildedRose.cs" Link="GildedRose.cs" />
+		<Compile Include="..\GildedRoseFinal\SulfurasHandOfRagnarosItem.cs" Link="SulfurasHandOfRagnarosItem.cs" />
+		<Compile Include="..\GildedRoseFinal\Item.cs" Link="Item.cs" />
+	</ItemGroup>
+
+</Project>
