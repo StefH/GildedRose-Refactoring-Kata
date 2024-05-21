@@ -27,7 +27,7 @@ public class Program
         for (var i = 0; i < 31; i++)
         {
             Console.WriteLine("-------- day " + i + " --------");
-            Console.WriteLine("name, sellIn, quality");
+            Console.WriteLine("Name, SellInDays, Quality");
             for (var j = 0; j < items.Count; j++)
             {
                 Console.WriteLine(items[j]);
