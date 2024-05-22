@@ -5,7 +5,7 @@ namespace GildedRoseKata;
 /// </summary>
 public class ConjuredItem : StandardItem
 {
-    public ConjuredItem(string name, int sellIn, int quality) : base(name, sellIn, quality)
+    public ConjuredItem(string name, int sellInDays, int quality) : base(name, sellInDays, quality)
     {
     }
 

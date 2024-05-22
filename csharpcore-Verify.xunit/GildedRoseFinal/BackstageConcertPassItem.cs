@@ -13,14 +13,14 @@ public class BackstageConcertPassItem : Item
     private const int QUALITY_INCREASE_NEAR = 2;
     private const int QUALITY_INCREASE_NORMAL = 1;
 
-    public BackstageConcertPassItem(int sellIn, int quality) : base("Backstage passes to a TAFKAL80ETC concert", sellIn, quality)
+    public BackstageConcertPassItem(int sellInDays, int quality) : base("Backstage passes to a TAFKAL80ETC concert", sellInDays, quality)
     {
     }
     public override void UpdateQuality()
     {
         if (IsExpired())
         {
-            Quality = 0;
+            Quality = MIN_ITEM_QUALITY;
             return;
         }
 

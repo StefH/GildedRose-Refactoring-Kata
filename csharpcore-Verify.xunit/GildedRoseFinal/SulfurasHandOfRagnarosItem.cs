@@ -2,7 +2,7 @@ namespace GildedRoseKata;
 
 public class SulfurasHandOfRagnarosItem : Item
 {
-    public SulfurasHandOfRagnarosItem(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", sellIn, quality)
+    public SulfurasHandOfRagnarosItem(int sellInDays, int quality) : base("Sulfuras, Hand of Ragnaros", sellInDays, quality)
     {
     }
 

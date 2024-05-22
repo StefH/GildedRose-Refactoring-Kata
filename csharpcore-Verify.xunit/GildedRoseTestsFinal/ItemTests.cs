@@ -9,7 +9,7 @@ public class ItemTests
     {
         private readonly int _delta;
 
-        public TestItem(int delta, string name, int sellIn, int quality) : base(name, sellIn, quality)
+        public TestItem(int delta, string name, int sellInDays, int quality) : base(name, sellInDays, quality)
         {
             _delta = delta;
         }

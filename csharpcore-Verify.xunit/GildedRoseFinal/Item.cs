@@ -1,4 +1,6 @@
-﻿namespace GildedRoseKata;
+﻿using System;
+
+namespace GildedRoseKata;
 
 public abstract class Item
 {
@@ -6,15 +8,17 @@ public abstract class Item
     public const int MIN_ITEM_QUALITY = 0;
 
     public string Name { get; }
+
     public int SellInDays { get; private set; }
+
     public int Quality { get; protected set; }
 
     public virtual bool IsExpired() => SellInDays < 0;
 
-    protected Item(string name, int sellIn, int quality)
+    protected Item(string name, int sellInDays, int quality)
     {
         Name = name;
-        SellInDays = sellIn;
+        SellInDays = sellInDays;
         Quality = quality;
     }
 
@@ -25,24 +29,12 @@ public abstract class Item
 
     protected void DecreaseQuality(int amount)
     {
-        if (Quality - amount < MIN_ITEM_QUALITY)
-        {
-            Quality = MIN_ITEM_QUALITY;
-            return;
-        }
-
-        Quality -= amount;
+        Quality = Math.Max(Quality - amount, MIN_ITEM_QUALITY);
     }
 
     protected void IncreaseQuality(int amount)
     {
-        if (Quality + amount > MAX_ITEM_QUALITY)
-        {
-            Quality = MAX_ITEM_QUALITY;
-            return;
-        }
-
-        Quality += amount;
+        Quality = Math.Min(Quality + amount, MAX_ITEM_QUALITY);
     }
 
     public abstract void UpdateQuality();
