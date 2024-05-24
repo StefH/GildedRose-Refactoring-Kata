@@ -22,7 +22,7 @@ public abstract class Item
         Quality = quality;
     }
 
-    public virtual void UpdateSellByDate()
+    public virtual void UpdateSellInDays()
     {
         SellInDays--;
     }

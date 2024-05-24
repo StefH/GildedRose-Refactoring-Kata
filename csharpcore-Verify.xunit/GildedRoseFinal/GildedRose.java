@@ -12,7 +12,7 @@ class GildedRose{
 
 	public void dailyItemUpdate(){
 		for(Item item : items){
-			item.updateSellByDate();
+			item.UpdateSellInDays();
 			item.updateQuality();
 		}
 	}

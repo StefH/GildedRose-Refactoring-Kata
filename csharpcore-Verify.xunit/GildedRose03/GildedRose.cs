@@ -34,9 +34,10 @@ public class GildedRose
         {
             var itemIsAgedBrie = ItemIsAgedBrie(item);
             var itemIsBackStagePasses = ItemIsBackStagesPass(item);
+            var itemIsNormalOrSulfuras = !itemIsAgedBrie && !itemIsBackStagePasses;
             var itemCanBeChanged = ItemCanBeChanged(item);
             
-            if (!itemIsAgedBrie && !itemIsBackStagePasses)
+            if (itemIsNormalOrSulfuras)
             {
                 if (ItemCanBeDecreasedFurther(item))
                 {

@@ -8,7 +8,7 @@ public class GildedRose(IEnumerable<Item> items)
     {
         foreach (var item in items)
         {
-            item.UpdateSellByDate();
+            item.UpdateSellInDays();
             item.UpdateQuality();
         }
     }

@@ -28,13 +28,13 @@ public class ItemTests
     }
 
     [Fact]
-    public void UpdateSellByDate_DecreasesSellInDaysByOne()
+    public void UpdateSellInDays_DecreasesSellInDaysByOne()
     {
         // Arrange
         var item = new TestItem(0, "Test Item", 5, 10);
 
         // Act
-        item.UpdateSellByDate();
+        item.UpdateSellInDays();
 
         // Assert
         Assert.Equal(4, item.SellInDays);

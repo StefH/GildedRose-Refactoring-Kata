@@ -14,7 +14,7 @@ public class SulfurasHandOfRagnarosItem extends Item{
 	}
 
 	@Override
-	public void updateSellByDate(){
+	public void UpdateSellInDays(){
 	}
 	
 	@Override

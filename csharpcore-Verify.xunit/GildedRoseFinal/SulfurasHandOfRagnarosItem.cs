@@ -11,7 +11,7 @@ public class SulfurasHandOfRagnarosItem : Item
         return false;
     }
 
-    public override void UpdateSellByDate()
+    public override void UpdateSellInDays()
     {
     }
 

@@ -14,7 +14,7 @@ public abstract class Item {
 		this.quality = quality;
 	}
 	
-	public void updateSellByDate(){
+	public void UpdateSellInDays(){
 		sellInDays--;
 	}
 
