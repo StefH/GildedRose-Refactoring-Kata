@@ -28,7 +28,7 @@ public class GildedRose
         _items = items;
     }
 
-    public void UpdateQuality()
+    public void Update()
     {
         foreach (var item in _items)
         {

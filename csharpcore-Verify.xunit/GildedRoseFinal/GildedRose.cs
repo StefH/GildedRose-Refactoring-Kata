@@ -4,7 +4,7 @@ namespace GildedRoseKata;
 
 public class GildedRose(IEnumerable<Item> items)
 {
-    public void UpdateQuality()
+    public void Update()
     {
         foreach (var item in items)
         {

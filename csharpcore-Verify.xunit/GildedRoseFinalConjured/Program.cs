@@ -33,7 +33,7 @@ public class Program
                 Console.WriteLine(items[j]);
             }
             Console.WriteLine("");
-            app.UpdateQuality();
+            app.Update();
         }
     }
 }
