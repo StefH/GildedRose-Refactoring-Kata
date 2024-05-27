@@ -35,7 +35,6 @@ public class BackstageConcertPassItem : Item
                 break;
 
             default:
-                // Default increase
                 IncreaseQuality(QUALITY_INCREASE_NORMAL);
                 break;
         }
