@@ -14,8 +14,8 @@ public class Program
             new StandardItem("+5 Dexterity Vest", 10, 20),
             new AgedBrieItem(2, 0),
             new StandardItem("Elixir of the Mongoose", 5, 7),
-            new SulfurasHandOfRagnarosItem(0, 80),
-            new SulfurasHandOfRagnarosItem(-1, 80),
+            new SulfurasHandOfRagnarosItem(0),
+            new SulfurasHandOfRagnarosItem(-1),
             new BackstageConcertPassItem(15, 20),
             new BackstageConcertPassItem(10, 49),
             new BackstageConcertPassItem(5, 49)

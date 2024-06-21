@@ -10,8 +10,7 @@ public class SulfurasHandOfRagnarosItemTests
     {
         // Arrange
         const int sellInDays = -1;
-        const int quality = 10;
-        var sulfurasHandOfRagnarosItem = new SulfurasHandOfRagnarosItem(sellInDays, quality);
+        var sulfurasHandOfRagnarosItem = new SulfurasHandOfRagnarosItem(sellInDays);
 
         // Act
         var isExpired = sulfurasHandOfRagnarosItem.IsExpired();
@@ -25,14 +24,13 @@ public class SulfurasHandOfRagnarosItemTests
     {
         // Arrange
         const int sellInDays = -1;
-        const int quality = 99;
-        var sulfurasHandOfRagnarosItem = new SulfurasHandOfRagnarosItem(sellInDays, quality);
+        var sulfurasHandOfRagnarosItem = new SulfurasHandOfRagnarosItem(sellInDays);
 
         // Act
         sulfurasHandOfRagnarosItem.UpdateQuality();
 
         // Assert
         Assert.Equal(sellInDays, sulfurasHandOfRagnarosItem.SellInDays);
-        Assert.Equal(quality, sulfurasHandOfRagnarosItem.Quality);
+        Assert.Equal(80, sulfurasHandOfRagnarosItem.Quality);
     }
 }
